@@ -16,11 +16,11 @@ As tecnologias usadas foram:
  
 Para clonar o repositório será necessário o seguinte comando:
 
-	https://github.com/Pyetro7007/DS_ControleEstoqueAPI_PyetroFabricioPeterlini.git
+	git clone https://github.com/Pyetro7007/ControleEstoque_20240101.git
  
 Após clonar, será necessário acessar a pasta DS_ControleEstoqueAPI_PyetroFabricioPeterlini com o comando:
 
- 	cd DS_ControleEstoqueAPI_PyetroFabricioPeterlini
+ 	cd ControleEstoque_20240101
 
 Como este projeto utiliza Maven, a instalação das dependências geralmente ocorre automaticamente durante o build, mas você pode forçar o download e build com:
 
