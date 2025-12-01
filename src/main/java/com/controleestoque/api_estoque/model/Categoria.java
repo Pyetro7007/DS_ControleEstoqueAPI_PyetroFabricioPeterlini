@@ -2,7 +2,6 @@ package com.controleestoque.api_estoque.model;
 
 import java.util.List;
 
-import jakarta.annotation.Generated;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -21,20 +20,22 @@ public class Categoria {
 
     private String nome;
 
+    // Relacionamento 1:N, mappedBy aponta para o campo em Produto
     @OneToMany(mappedBy = "categoria", cascade = CascadeType.ALL)
     private List<Produto> produtos;
 
     public Categoria() {}
 
-    public Categoria(String nome, List<Produtos> produtos) {
+    public Categoria(String nome, List<Produto> produtos) {
         this.nome = nome;
         this.produtos = produtos;
     }
 
-    public Long getId() {return id; }
+    public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
     public String getNome() { return nome; }
-    public void setNome (String nome) { this.nome = nome; }
+    public void setNome(String nome) { this.nome = nome; }
     public List<Produto> getProdutos() { return produtos; }
     public void setProdutos(List<Produto> produtos) { this.produtos = produtos; }
+
 }
