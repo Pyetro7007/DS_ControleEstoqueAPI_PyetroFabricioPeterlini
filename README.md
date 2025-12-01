@@ -46,7 +46,7 @@ O servidor da API estará disponível em http://localhost:8080 (porta padrão do
 
 A API é estruturada em torno de quatro controladores principais: **Vendas**, **Clientes**, Categorias, Fornecedores e **Produtos** (Estoque).
 
-### 1. Módulo de Vendas (Lógica Transacional Crítica)
+### 1. Módulo de Vendas
 
 O endpoint de registro de venda é o mais importante, pois aciona a lógica de **verificação e baixa de estoque de forma transacional**.
 
@@ -57,8 +57,7 @@ O endpoint de registro de venda é o mais importante, pois aciona a lógica de *
 | `GET` | `/api/vendas/{id}` | Busca os detalhes de uma venda específica. |
 | `DELETE` | `/api/vendas/{id}` | Remove uma venda. |
 
-### 2. Módulo de Clientes (CRUD)
-
+### 2. Módulo de Clientes
 | Método HTTP | Endpoint | Descrição |
 | :--- | :--- | :--- |
 | `POST` | `/api/clientes` | **Cria** um novo cliente. |
