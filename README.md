@@ -32,6 +32,8 @@ Como este projeto utiliza Maven, a instalação das dependências geralmente oco
 
 Edite o arquivo application.properties (localizado em src/main/resources) para configurar suas credenciais (dialeto) e URL do banco de dados, neste projeto foi utilizado o MySQL8.
 
+Além disso, o nome do banco de dados, por padrão, se chama **estoque_db**, eu pode ser editado mudando o link no arquivo application.properties.
+
 ---
 
 Para iniciar o servidor Spring Boot, use o comando:
