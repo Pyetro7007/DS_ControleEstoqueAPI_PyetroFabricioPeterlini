@@ -28,7 +28,7 @@ Como este projeto utiliza Maven, a instalação das dependências geralmente oco
 
 ---
 
-**Configuração do Banco de Dados**
+## Configuração do Banco de Dados
 
 Edite o arquivo application.properties (localizado em src/main/resources) para configurar suas credenciais (dialeto) e URL do banco de dados, neste projeto foi utilizado o MySQL8.
 
